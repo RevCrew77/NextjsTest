@@ -7,13 +7,17 @@ export const StyledSectionBigHeading = styled(forwardRef((props, ref) => <h1 {..
   font-weight: 600;
   font-size: 3rem;
   line-height: 3.94rem;
+  padding: 0;
+  margin: 0;
 `;
 
 export const StyledSectionHeading = styled(forwardRef((props, ref) => <h2 {...props} ref={ref} />))`
   font-family: Poppins;
-  font-size: 2.5rem;
-  line-height: 4.375rem;
+  font-size: 1.5rem;
+  line-height: 1.375rem;
   font-weight: 600;
+  color: ${(props) => props.color};
+  text-decoration: ${(props) => props.line};
 `;
 
 export const StyledSectionSubheading = styled(forwardRef((props, ref) => <h3 {...props} ref={ref} />))`
@@ -42,4 +46,12 @@ export const StyledSectionParagraph = styled((props) => <p {...props} />)`
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
+  margin: 0px
 `;
+
+export const StyledCardSectionHeading = styled(forwardRef((props, ref) => <h2 {...props} ref={ref} />))`
+  font-family: Poppins;
+  font-size: 0.5rem;
+  line-height: 1rem;
+  font-weight: 600;
+`

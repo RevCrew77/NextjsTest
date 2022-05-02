@@ -1,4 +1,9 @@
 import { Hero } from "../sections";
+import Head from "next/head";
+import { Button } from "../components/Button/Button";
+import { Card } from "../collections/Card/Card";
+import { Main } from "../collections/Main/Main";
+import { background } from "../public/img/background.png";
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
@@ -21,6 +26,11 @@ export default function Home() {
       <div>
         <Hero {...heroProps} />
         {/** Other sections */}
+        <Head>
+          <title>Job prepare for position</title>
+        </Head>
+
+        <Main img={background}></Main>
       </div>
     </>
   );
